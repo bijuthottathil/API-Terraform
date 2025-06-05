@@ -5,15 +5,33 @@
 3. Next we are going to deploy this service in Azure App service using terraform
 4. cd app
     zip -r app.zip
-5.  az login
-6.  az group create \
-  --name my-resource-group \
-  --location eastus
 
-7.  az storage account create \
+   Initially we need to create backend storage account . I used bash script for that
+
+ ![image](https://github.com/user-attachments/assets/3e01c7e5-01ae-47c4-a86b-1a30514585b5)
+
+![image](https://github.com/user-attachments/assets/536a8e98-bbba-4306-a306-779c477f6e32)
+
+![image](https://github.com/user-attachments/assets/0f4a65a4-ebf9-438c-9f14-05c788d3aedf)
+
+Deployment is completed
+
+![image](https://github.com/user-attachments/assets/473b8c61-078b-4ee2-a915-81aa22d78d8a)
+
+
+State file is here
+
+![image](https://github.com/user-attachments/assets/e982a708-5211-4a3f-ba2b-6e3312270dc9)
+
+6.  az login
+7.  az group create \
+  --name my-resource-group \
+  --location eastus2
+
+8.  az storage account create \
   --name mystoragebiju \
   --resource-group my-resource-group \
-  --location eastus \
+  --location eastus2  \
   --sku Standard_LRS
 
     az storage blob upload \
