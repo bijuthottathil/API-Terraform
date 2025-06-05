@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 # API-Terraform
 
 1. Making sure that basic FLASK API is working locally ![image](https://github.com/user-attachments/assets/f8621143-a819-4d80-8c07-2ad5b9ff8dea)
@@ -48,3 +49,23 @@ State file is here
 
 
    
+=======
+
+# Azure Python Microservice Deployment with Terraform
+
+## Overview
+This deploys a Flask microservice to Azure App Service using Terraform with ZIP deploy.
+
+## Setup
+1. Replace values in `terraform.tfvars`
+2. Run:
+    terraform init
+    terraform apply
+
+## Test
+After deployment:
+    curl https://<app_name>.azurewebsites.net
+Should return:
+    Hello from Azure Python App Service!
+        
+>>>>>>> Stashed changes
