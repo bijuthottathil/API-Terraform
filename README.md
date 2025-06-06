@@ -7,7 +7,7 @@ This deploys a Flask microservice to Azure App Service using Terraform with ZIP 
 4. cd app
     zip -r app.zip
 
-   Initially we need to create backend storage account . I used bash script for that
+Initially we need to create backend storage account . I used bash script for that
 
  ![image](https://github.com/user-attachments/assets/3e01c7e5-01ae-47c4-a86b-1a30514585b5)
 
